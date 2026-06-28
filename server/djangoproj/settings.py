@@ -28,7 +28,7 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = []
 
 REST_FRAMEWORK = {
@@ -144,3 +144,11 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build/static'),
 ]
 
+
+ALLOWED_HOSTS = ["*"]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://karthikey178-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai",
+    "https://*.proxy.cognitiveclass.ai",
+    "https://*.labs.cognitiveclass.ai",
+]
